@@ -6,42 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
     <header>
-        <h1>CAFE FLORETTE</h1>
+        <h1 class="box-title"><a href="/cafe-html-css/Home.html">CAFE FLORETTE</a></h1>
         <nav>
             <ul>
-                <li><a href="Home.html">Acceuil</a></li>
-                <li><a href="src/pages/where.html">Nous trouver</a></li>
-                <li><a href="src/pages/contact.html">Contact</a></li>
+                <li><a href="/cafe-html-css/Home.html" class="active">Acceuil</a></li>
+                <li><a href="/cafe-html-css/src/pages/where.html">Nous trouver</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <!-- active pour changement de couleur des lien d'acceuil -->
     </header>
 
-    <h3>Une question ? Contactez nous</h3>
-
-    <div>
-        <!-- ligne -->
-    </div>
-
 
     <section>
-        <form>
-            <label>Nom</label>
-            <p><input type="text" placeholder="Nom" required></p>
+        <div>
+            <h3>Une question ? Contactez nous</h3>
+            <div>
+                <!-- ligne -->
+            </div>
+            <form action="#">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required>
 
-            <label>Email</label>
-            <p><input type="email" placeholder="email" required></p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
 
-            <label>Questions et remarques</label>
-            <p><textarea cols="100" rows="5"></textarea></p>
+                <label for="questions">Questions et remarques</label>
+                <textarea name="questions" id="questions" cols="100" rows="5"></textarea>
 
-            <button type="submit">SOUMETTRE</button>
-        </form>
+                <button type="submit">SOUMETTRE</button>
+            </form>
+        </div>
     </section>
 
 

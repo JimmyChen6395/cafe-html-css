@@ -1,8 +1,110 @@
-h1 {
-    color: white;
+/* normalisation de ma page RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    background-color: rgb(37, 36, 36);
-    margin-top: -1em;
+    background-color: #333;
+    overflow: auto;
 }
+
+header h1 {
+    float: left;
+    padding: 1.23rem;
+    color: white;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+ul li a {
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #444;
+}
+
+ul li {
+    display: inline;
+}
+
+section div {
+    text-align: center;
+}
+
+.frame {
+    background-image: url(/cafe-html-css/src/img/frame.jpg);
+    padding: 20rem;
+    margin: auto;
+}
+
+.Title-home {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+hr {
+    display: block;
+}
+
+.premierP {
+    color: white;
+    margin-top: 2rem;
+}
+
+button {}
+
+
+/* 
+header h1 {
+    width: 1280px;
+    height: 80px;
+    position: relative;
+}
+
+h1 a {
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+ul {
+    float: right;
+    border: 1px;
+    border-width: px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+}
+
+ul a {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+*/
