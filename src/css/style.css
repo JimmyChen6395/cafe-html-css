@@ -12,7 +12,7 @@
 
 header {
     background-color: #333;
-    overflow: auto;
+    overflow: hidden;
 }
 
 header h1 {
@@ -45,66 +45,163 @@ ul li {
     display: inline;
 }
 
-section div {
+.frame {
+    background-image: url(/cafe-html-css/src/img/frame.jpg);
+    background-size: cover;
+    padding: 18rem 40rem 15rem 40rem;
+}
+
+.frame div {
     text-align: center;
 }
 
-.frame {
-    background-image: url(/cafe-html-css/src/img/frame.jpg);
-    padding: 20rem;
-    margin: auto;
-}
-
-.Title-home {
+.frame div h2 {
     color: white;
-    margin-bottom: 2rem;
     font-size: 3rem;
 }
 
-hr {
-    display: block;
+.frame div hr {
+    background-color: black;
+    height: 1rem;
+    width: 9rem;
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 .premierP {
     color: white;
     margin-top: 2rem;
+    font-size: 1rem;
 }
 
-button {}
-
-
-/* 
-header h1 {
-    width: 1280px;
-    height: 80px;
-    position: relative;
+button {
+    margin-top: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 17% / 50%;
+    border-style: none;
+    text-transform: uppercase;
 }
 
-h1 a {
+.découvrir:hover {
     color: white;
-    margin-top: 20px;
-    text-decoration: none;
+    background-color: #333;
 }
 
-ul {
-    float: right;
-    border: 1px;
-    border-width: px 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.global {
+    display: flex;
+}
+
+.cols {
+    flex: 1;
+    padding: 9rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sourire {
+    background-image: url(/cafe-html-css/src/img/person-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 18rem;
+}
+
+.last {
     text-align: center;
 }
 
-ul li {
-    display: inline;
+.last div {
+    padding: 10rem;
+    font-size: 1.5rem;
 }
 
-ul a {
+.réserver {
+    background-color: #333;
     color: white;
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
 }
+
+.réserver:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* Page ou nous trouver */
+
+.global2 {
+    display: flex;
+}
+
+.map {
+    padding: 16rem;
+}
+
+iframe {
+    border-radius: 10%;
+    margin-top: -3rem;
+    margin-left: 5rem;
+}
+
+.cols2 {
+    margin-top: 13rem;
+    margin-left: -6rem;
+    font-size: 2rem;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.paragraphe2 {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.paragraphe3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.quatre {
+    color: white;
+    background-color: mediumvioletred;
+    border-radius: 100%;
+    width: 2.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.onze {
+    color: white;
+    background-color: brown;
+    border-radius: 100%;
+    width: 2.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact div h3 {
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+
+/* PROBLEMES
+
+- Tout mon CSS se modifie à chaque modification sur autres balise
+- background-image mettre en fixe
+- Le café et le clock ne se trouve pas cote à cote
 
 */
