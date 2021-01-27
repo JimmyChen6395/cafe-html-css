@@ -194,14 +194,36 @@ iframe {
 
 .contact div h3 {
     font-size: 2rem;
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 
+label,
+input,
+.submit,
+textarea {
+    display: block;
+    margin-top: 1.5rem;
+}
 
-/* PROBLEMES
+label {
+    font-weight: bold;
+}
 
-- Tout mon CSS se modifie à chaque modification sur autres balise
-- background-image mettre en fixe
-- Le café et le clock ne se trouve pas cote à cote
+.line2 {
+    border-top: 1px solid black;
+    width: 54%;
+    margin-top: 2rem;
+    margin-left: 25rem;
+}
 
-*/
+.contact h3,
+form {
+    margin-left: 25rem;
+}
+
+.submit {
+    margin-bottom: 7.1rem;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+}
