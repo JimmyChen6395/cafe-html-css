@@ -46,7 +46,7 @@ ul li {
 }
 
 .frame {
-    background-image: url(/cafe-html-css/src/img/frame.jpg);
+    background-image: url(/src/img/frame.jpg);
     background-size: cover;
     padding: 18rem 40rem 15rem 40rem;
 }
@@ -102,7 +102,7 @@ button {
 }
 
 .sourire {
-    background-image: url(/cafe-html-css/src/img/person-1.jpg);
+    background-image: url(/src/img/person-1.jpg);
     background-size: cover;
     background-position: center;
     padding: 18rem;
