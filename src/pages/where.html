@@ -1,56 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Nous trouver</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <title>Café florette | Accueil</title>
+    <link rel="stylesheet" href="./src/css/mobile.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1> <a href="/cafe-html-css/index.html">CAFE FLORETTE</a> </h1>
-        </div>
-
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Acceuil</a></li>
-                    <li><a href="#" class="active">Nous trouver</a></li>
-                    <li><a href="/src/pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- active pour changement de couleur des lien d'acceuil -->
+    <header class="header">
+        <nav>
+            <h1>
+                <a href="./index.html">CAFE FLORETTE</a>
+            </h1>
+            <ul>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a class="active" href="#">Nous trouver</a></li>
+                <li><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-
-
-    <section class="global2">
-        <div class="map">
-            <!-- map google -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20342.390879612296!2d4.180019100000001!3d50.40758605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1611344700823!5m2!1sfr!2sbe" width="400" height="300" frameborder="0" style="border:0;"
-                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <section class="where">
+        <div class="container">
+            <img class="where-img" src="/src/images/map.png" alt="carte" />
+            <div class="where-text">
+                <h1 class="underline">Ou nous trouver</h1>
+                <h3>
+                    Métro : ligne <span class="chip chip-purple">4</span> - Odéon, ligne
+                    <span class="chip chip-brown">11</span> - Mabillion
+                </h3>
+                <p>Adresse : 131 Boulevard Saint-Germain, 75006 Paris</p>
+            </div>
         </div>
-
-
-        <div class="cols2">
-            <h3>Où nous trouver</h3>
-            <div class="line"></div>
-            <!-- ligne -->
-            <p class="paragraphe2">Métro : ligne <span class="quatre">4</span> - Odéon, ligne <span class="onze">11</span> - Mabilion</p>
-            <p class="paragraphe3">Adresse : 131 Boulevard Saint-Germain, 75006 Paris</p>
-        </div>
-
     </section>
-
-
-
     <footer>
-        <p>Copyright &#9400; - Florette - 2021</p>
+        <p>Copyright &#9400; - florette - 2019</p>
     </footer>
 </body>
 

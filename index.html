@@ -1,90 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
-    <title>Projet 1 cours LBA</title>
+    <title>Café florette | Accueil</title>
+    <!-- <link rel="stylesheet" href="./src/css/mobile.css"> -->
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1> <a href="#">CAFE FLORETTE</a> </h1>
-        </div>
-
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Acceuil</a></li>
-                    <li><a href="/src/pages/where.html">Nous trouver</a></li>
-                    <li><a href="/src/pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- active pour changement de couleur des lien d'acceuil -->
+    <header class="header">
+        <h1>
+            <a href="./index.html">CAFE FLORETTE</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="./index.html">Accueil</a></li>
+                <li><a href="/src/pages/where.html">Nous trouver</a></li>
+                <li><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-
-    <!-- section>h2+hr+p+boutton -->
-
-
-    <section class="frame">
-        <div>
-            <h2>Toute l'expertise française dans un café</h2>
-            <hr>
-            <!-- une balise HR -->
-            <p class="premierP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore inventore est qui et, soluta deserunt repellendus esse corporis quos, sapiente nesciunt perspiciatis cupiditate, quis eum odit blanditiis? Omnis, quod.</p>
-
-            <button class="découvrir">Découvrir</button>
-        </div>
-        <!-- besoin d'un backgroud image pour la section -->
-    </section>
-
-
-
-
-
-    <section class="global">
-        <div class="cols">
-            <!-- une icone -->
-            <i class="fas fa-coffee fa-3x my-10"></i>
-            <h3>Un nouveau café par jour</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, beatae et explicabo dolore vel doloremque sapiente minima. Accusantium sapiente dolor sunt, numquam, reiciendis temporibus repellendus fugit culpa rerum ipsam distinctio?</p>
-        </div>
-
-        <div class="cols">
-            <!-- une icone -->
-            <i class="fas fa-clock fa-3x my-10"></i>
-            <h3>Ouvert 24h/24 7j/7</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, beatae et explicabo dolore vel doloremque sapiente minima. Accusantium sapiente dolor sunt, numquam, reiciendis temporibus repellendus fugit culpa rerum ipsam distinctio?</p>
+    <section class="vp">
+        <div class="vp-content">
+            <h1>Toute l'expertise française dans un café</h1>
+            <div class="separator"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis et nisi, voluptate blanditiis quaerat a, molestiae nulla nihil, laboriosam ipsa optio accusantium! Odit unde quibusdam minus tempore cupiditate veritatis?
+            </p>
+            <a href="./where.html" class="btn btn-primary my-10">DECOUVRIR</a>
         </div>
     </section>
-
-
-    <div class="sourire">
-        <!-- backgroud image -->
-    </div>
-
-
-    <section class="last">
-        <div>
-            <h3>Réservez maintenant</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, facilis tempora placeat quibusdam sequi voluptatibus quod suscipit dolor officiis. Quidem provident minus porro, eum fuga illo itaque nobis sint minima.</p>
-
-            <button class="réserver">RESERVEZ</button>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-coffee fa-3x my-10"></i>
+                <h2>Un nouveau café par jour</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, architecto! Vitae animi dolor sit, saepe cum iusto repellat quis suscipit.
+                </p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock fa-3x my-10"></i>
+                <h2>Ouvert 24h/24 7j/7</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, et dolore sint iure fuga quidem atque odit at debitis provident!
+                </p>
+            </div>
         </div>
-        <!-- utiliser un hover -->
     </section>
-
+    <div class="person"></div>
+    <section class="reservation">
+        <div class="container">
+            <h2>Reservez des maintenant</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique soluta voluptates, placeat iure neque dolores vel? Facere perspiciatis vel quasi, deleniti inventore obcaecati animi harum totam. Hic, nisi cumque.
+            </p>
+            <a href="./contact.html" class="btn btn-dark my-20">RESERVEZ</a>
+        </div>
+    </section>
     <footer>
-        <p>Copyright &#9400; - Florette - 2021</p>
+        <p>Copyright &#9400; - florette - 2020</p>
     </footer>
-
-
 </body>
 
 </html>

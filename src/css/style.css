@@ -1,4 +1,4 @@
-/* normalisation de ma page RESET CSS */
+/* reset */
 
 * {
     margin: 0;
@@ -6,263 +6,305 @@
     box-sizing: border-box;
 }
 
-* {
-    font-family: 'Open Sans', sans-serif;
+
+/* general */
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.separator {
+    margin: 20px auto;
+    height: 10px;
+    width: 100px;
+    background: #111;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: white;
+    color: #222;
+}
+
+.btn-dark {
+    background: #222;
+    color: white;
+}
+
+.btn-dark:hover {
+    background: white;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.btn-primary:hover {
+    background: #222;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.underline {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chip {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    border-radius: 100%;
+    background: #333;
+    color: white;
+}
+
+.chip-purple {
+    background: #be418c;
+}
+
+.chip-brown {
+    background: #8c5e24;
 }
 
 
-/* ------------------------------------------------------------------------ */
+/* header */
 
 header {
-    background-color: #333;
-    overflow: hidden;
+    background: #333;
+    overflow: auto;
+    line-height: 1.7em;
 }
 
 header h1 {
     float: left;
-    padding: 1.23rem;
-    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
 }
 
 header h1 a {
     color: white;
-    text-decoration: none;
 }
 
-nav {
+header nav ul {
     float: right;
+    list-style: none;
 }
 
-ul li a {
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
     color: white;
-    display: inline-block;
-    padding: 2rem;
-    text-decoration: none;
+    padding: 20px;
+    display: block;
 }
 
-ul li a:hover {
-    background-color: #444;
-}
-
-ul li {
-    display: inline;
+header nav ul li a:hover {
+    background: #444;
 }
 
 
-/* ------------------------------------------------------------------------- */
+/* vp */
 
-.frame {
-    background-image: url(/src/img/frame.jpg);
+.vp {
+    height: 74.5rem;
+    background: url(../images/frame.jpg) center center;
     background-size: cover;
-    padding: 18rem 40rem 15rem 40rem;
-}
-
-.frame div {
     text-align: center;
 }
 
-.frame div h2 {
+.vp-content {
+    max-width: 37.5rem;
+    padding-top: 21rem;
     color: white;
-    font-size: 3rem;
+    /* display: block; */
+    margin: auto;
 }
 
-.frame div hr {
-    background-color: black;
-    height: 1rem;
-    width: 9rem;
-    display: inline-block;
-    margin-top: 2rem;
+.vp-content h1 {
+    font-size: 3.12rem;
 }
 
-.premierP {
-    color: white;
-    margin-top: 2rem;
-    font-size: 1rem;
-}
-
-button {
-    margin-top: 2rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 17% / 50%;
-    border-style: none;
-    text-transform: uppercase;
-}
-
-.découvrir:hover {
-    color: white;
-    background-color: #333;
-    border: 1px solid #333;
+.vp-content p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    line-height: 1.9em;
 }
 
 
-/* -------------------------------------------------------------------------- */
+/* features */
 
-.global {
-    display: flex;
-}
-
-.cols {
-    flex: 1;
-    padding: 9rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-
-/* --------------------------------------------------------------------------- */
-
-.sourire {
-    background-image: url(/src/img/person-1.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 18rem;
-}
-
-
-/* --------------------------------------------------------------------------- */
-
-
-/* --------------------------------------------------------------------------- */
-
-.last {
+.features {
+    overflow: auto;
+    padding: 100px 0px 100px 0px;
     text-align: center;
 }
 
-.last h3 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.last div {
-    padding: 10rem;
-    font-size: 1.5rem;
-}
-
-.réserver {
-    background-color: #333;
-    color: white;
-}
-
-.réserver:hover {
-    background-color: white;
-    color: black;
+.feature {
+    float: left;
+    width: 50%;
 }
 
 
-/* --------------------------------------------------------------------------- */
+/* person */
+
+.person {
+    height: 400px;
+    background: url(../images/person-1.jpg) center center/cover;
+}
+
+
+/* reservation */
+
+.reservation {
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+
+/* footer */
 
 footer {
-    background-color: #333;
-    text-align: center;
-    padding: 2rem;
-    font-size: 1.5rem;
+    background: #222;
     color: white;
-}
-
-
-/* Page ou nous trouver */
-
-.global2 {
-    display: flex;
-}
-
-.map {
-    padding: 16rem;
-}
-
-iframe {
-    border-radius: 10%;
-    margin-top: -3rem;
-    margin-left: 5rem;
-}
-
-.cols2 {
-    margin-top: 13rem;
-    margin-left: -6rem;
-    font-size: 2rem;
-}
-
-.line {
-    border-top: 1px solid black;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.paragraphe2 {
-    font-weight: bold;
-    margin-top: 2rem;
-}
-
-.paragraphe3 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-}
-
-.quatre {
-    color: white;
-    background-color: mediumvioletred;
-    border-radius: 100%;
-    width: 2.5rem;
-    display: inline-block;
+    padding: 30px 0px 30px 0px;
     text-align: center;
 }
 
-.onze {
-    color: white;
-    background-color: brown;
-    border-radius: 100%;
-    width: 2.5rem;
-    display: inline-block;
-    text-align: center;
+footer p {
+    margin-bottom: 0px;
 }
 
 
-/* Page contact */
+/* where */
 
-.contact div h3 {
-    font-size: 2rem;
-    margin-top: 9rem;
+.where {
+    padding: 180px 0px 100px 0px;
+    overflow: auto;
+    min-height: 100vh;
 }
 
-label,
-input,
-.submit,
+.where-img {
+    float: left;
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.where-text {
+    float: right;
+    width: 50%;
+}
+
+
+/* contact */
+
+.contact {
+    padding: 180px 0px 100px 0px;
+    min-height: 100vh;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form-container form label {
+    display: block;
+    font-weight: 700;
+}
+
+.contact-form-container form input,
 textarea {
     display: block;
-    margin-top: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
-input {
-    width: 65rem;
-    height: 5rem;
+.contact-form-container form textarea {
+    min-height: 80px;
 }
 
-textarea {
-    width: 65rem;
-}
 
-label {
-    font-weight: bold;
-}
+/* MOBILE */
 
-.line2 {
-    border-top: 1px solid black;
-    width: 54%;
-    margin-top: 2rem;
-    margin-left: 25rem;
-}
-
-.contact h3,
-form {
-    margin-left: 25rem;
-}
-
-.submit {
-    margin-bottom: 7.1rem;
-    font-weight: bold;
-    background-color: #333;
-    color: white;
+@media screen and (max-width: 925px) {
+    header {
+        text-align: center;
+    }
+    header h1 {
+        float: none;
+        font-size: 2rem;
+    }
+    header nav ul {
+        float: none;
+    }
+    header nav {
+        display: inline-block;
+    }
+    .vp-content {
+        padding: 21rem 2rem;
+    }
+    .feature {
+        float: none;
+        margin-left: 8.1rem;
+        padding: 1rem;
+    }
+    .container {
+        padding: 2rem
+    }
+    .where-text {
+        float: none;
+        text-align: center;
+        margin: 2rem 8rem;
+    }
+    img {
+        margin: 2rem 9rem;
+    }
+    form {
+        padding: 2rem
+    }
 }

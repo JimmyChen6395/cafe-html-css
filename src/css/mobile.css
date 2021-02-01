@@ -1,0 +1,29 @@
+@media screen and (max-width: 925px) {
+    header {
+        text-align: center;
+    }
+    header h1 {
+        float: none;
+    }
+    header nav ul {
+        float: none;
+    }
+    header nav {
+        display: inline-block;
+    }
+    .vp-content {
+        padding: 21rem 2rem;
+    }
+    .feature {
+        float: none;
+        margin-left: 8.1rem;
+        padding: 1rem;
+    }
+    .container {
+        padding: 2rem
+    }
+    .where-text {
+        float: none;
+        text-align: center;
+    }
+}
